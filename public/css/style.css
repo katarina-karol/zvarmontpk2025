@@ -1,0 +1,237 @@
+/* Your custom styles */
+:root {
+    --primary-color: #f8b400;
+    /*--primary-color: #ff9800;*/
+
+    --secondary-color: #646464;
+    --light-color: #d2d2d2;
+    --dark-color: #2c2c2c;
+    --white-color: #fff;
+}
+
+body {
+    font-family: "raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-color) !important;
+    line-height: 1.8;
+    min-height: 100vh !important;
+    height: 100%;
+    position: relative;
+    background-color: var(--dark-color) !important;
+}
+
+a:hover,
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.regular {
+    margin-bottom: 0.9rem;
+}
+
+.small {
+    font-size: clamp(15px, 2vw, 16px);
+    margin-bottom: 0.9rem;
+    line-height: 1.5;
+}
+
+#logo_zvarmont{
+    width: 280px;
+}
+
+nav.navbar {
+    padding: 1rem 1rem !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: auto;
+    transition: all 300ms;
+    display: flex;
+    align-items: center;
+}
+
+nav.navbar.scrolled {
+    background-color: var(--dark-color) !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-family: poppins, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    padding-left: 2rem;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    font-style: normal !important;
+    opacity: 1 !important;
+    z-index: 2;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar .navbar-nav .nav-item {
+    font-weight: 500 !important;
+    opacity: 1 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: poppins, sans-serif !important;
+    font-weight: 400 !important;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    /*color: var(--primary-color);*/
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+
+.h1_class{
+    display: none;
+    font-size: 0;
+    line-height: 0;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 700 !important;
+    margin-bottom: 1rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.material-symbols-outlined {
+    font-size: 16px;
+    /*font-weight: lighter;*/
+    margin-right: 0.9rem;
+    margin-top: 7px;
+    color: var(--secondary-color);
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.divider {
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#navholder {
+    background-color: transparent;
+    height: auto;
+    transition: all 300ms;
+    position: fixed;
+    z-index: 1111;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    height: 80vh !important;
+    min-height: unset !important;
+    max-height: 82%;
+}
+
+.container_products {
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-image {
+    background-image: url("../img/welding_zvarmont.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.blur {
+    /* Add the blur effect */
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.banner-text {
+    z-index: 10;
+    margin-top: 4rem;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    border: none;
+    padding: 0.5rem 2rem;
+    box-shadow: none;
+}
+
+.btn-primary-border:hover,
+.btn-primary-border {
+    background-color: transparent;
+    color: var(--white-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 2rem;
+    box-shadow: none;
+}
+
+#services {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+}
+
+#services h6,
+#services h3 {
+    color: var(--dark-color);
+}
+
+.service_item {
+    display: flex;
+}
+
+.contact-item {
+    display: flex;
+    /*margin-bottom: 1rem;*/
+}
+
+#products {
+    background-color: #eee;
+    color: var(--secondary-color);
+}
+
+#products h6,
+#products h3 {
+    color: var(--dark-color);
+}
+
+@media (max-width: 768px) {
+    #logo_zvarmont{
+        width: clamp(150px, 50vw, 200px);
+    }
+}
