@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for f in img/brana_zvar_mont.jpg img/brana_zvarmont.jpg img/welding_zvarmont.jpg img/logo_zvarmont.png img/carousel/1.jpg)",
+      "Bash(do echo \"$f:\")",
+      "Read(//c/catmedia/zvarmontpk2025/**)",
+      "Bash(identify \"$f\")",
+      "Bash(done)",
+      "Bash(for f in img/carousel/*.jpg)",
+      "Bash(do echo -n \"$f: \")"
+    ]
+  }
+}
