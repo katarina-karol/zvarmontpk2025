@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /index2.html
+Disallow: /index_old.html
 
 Sitemap: https://zvarmontpk.com/sitemap.xml
